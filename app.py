@@ -9,7 +9,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secrettunnel'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///E:/School/CloudComp/HW1/login-example/database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./database.db'
 Bootstrap(app)
 db = SQLAlchemy(app)
 login_manager = LoginManager()
