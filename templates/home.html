@@ -1,7 +1,7 @@
 {% extends "bootstrap/base.html" %}
 
 {% block title %}
-Demo App
+Home
 {% endblock %}
 
 {% block styles %}
@@ -12,10 +12,11 @@ Demo App
 {% block content %}
 <div class="container">
   <div class="template">
-    <h1>Cloud Computing Homework 1</h1>
-    <a href="{{ url_for('login') }}">Login</a>
-    <a href="{{ url_for('signup') }}">Sign Up</a>
-  </div>
-
-</div><!-- /.container -->
+    <h1>User Information</h1>
+    <div>First Name: {{ firstname }}</div>
+    <div>Last Name: {{ lastname }}</div>
+    <div>Email: {{ email }}</div>
+  <a href="{{ url_for('logout') }}">Log Out</a>
+</div>  
+</div>   
 {% endblock %}
